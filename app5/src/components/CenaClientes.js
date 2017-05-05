@@ -17,12 +17,12 @@ const cliente2 = require('../imgs/cliente2.png');
 export default class CenaClientes extends Component {
   render() {
     return (
-      <View>
+      <View style={{ backgroundColor: '#fff', flex: 1 }}>
         <StatusBar
           //hidden
-          backgroundColor='#ccc'
+          backgroundColor='#b9c941'
         />
-        <BarraNavegacao />
+        <BarraNavegacao voltar navigator={this.props.navigator} corDeFundo='#b9c941' />
 
         <View style={styles.cabecalho}>
           <Image source={detalheClientes} />
